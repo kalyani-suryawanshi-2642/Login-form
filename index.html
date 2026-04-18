@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>User Form</h2>
+
+<form id="userForm">
+    <input type="hidden" id="userId">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="mobile" placeholder="Mobile Number" required>
+    <input type="text" id="city" placeholder="City" required>
+
+    <button type="submit">Save</button>
+</form>
+
+<h2>Users List</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Mobile</th>
+<th>City</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="userTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
